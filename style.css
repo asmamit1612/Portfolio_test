@@ -1,0 +1,312 @@
+.resume {
+  width: 100%;
+  padding: 24px 0 40px;
+  background: #eef2f6;
+}
+
+.resume__page.resume__page--a4 {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 0 auto;
+  max-width: none;
+  padding: 12mm;
+  box-sizing: border-box;
+}
+
+.resume__page {
+  max-width: 940px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 22px 26px 28px;
+  box-shadow: 0 4px 18px rgba(15, 23, 42, 0.08);
+}
+
+.resume__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.resume__headerLeft {
+  flex: 1;
+  padding-top: 6px;
+  border-top: 2px solid #5b9bd5;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #5b9bd5;
+}
+
+.resume__line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 2px 0;
+}
+
+.resume__label {
+  font-weight: 700;
+}
+
+.resume__value {
+  font-weight: 400;
+}
+
+.resume__link {
+  color: #0563c1;
+  text-decoration: underline;
+  overflow-wrap: anywhere;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  border-radius: 4px;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.social__icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.social__link--linkedin {
+  color: #0a66c2;
+}
+
+.social__link--leetcode {
+  color: #111827;
+}
+
+.social__link--github {
+  color: #111827;
+}
+
+.social__link--gitlab {
+  color: #fc6d26;
+}
+
+.social__link:hover {
+  border-color: #2f75b5;
+  box-shadow: 0 1px 0 rgba(15, 23, 42, 0.06);
+}
+
+.contact {
+  width: 290px;
+  border: 1px solid #9dc3e6;
+  background: #ffffff;
+}
+
+.contact__title {
+  background: #5b9bd5;
+  color: #ffffff;
+  font-weight: 800;
+  padding: 3px 10px;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+}
+
+.contact__row {
+  display: flex;
+  gap: 6px;
+  padding: 3px 10px;
+  border-top: 1px solid #cfe2f3;
+}
+
+.contact__row:first-of-type {
+  border-top: 0;
+}
+
+.contact__k {
+  font-weight: 700;
+  min-width: 52px;
+}
+
+.contact__v {
+  overflow-wrap: anywhere;
+}
+
+.contact__link {
+  color: #0563c1;
+  text-decoration: underline;
+}
+
+.section {
+  margin-top: 12px;
+}
+
+.bar {
+  margin: 0;
+  background: #5b9bd5;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-top: 1px solid #2f75b5;
+  border-bottom: 1px solid #2f75b5;
+}
+
+.para {
+  margin: 6px 0 0;
+  font-size: 13.5px;
+  line-height: 1.35;
+}
+
+.bullets {
+  margin: 8px 0 0;
+  padding-left: 24px;
+  font-size: 13.5px;
+}
+
+.bullets li {
+  margin: 4px 0;
+}
+
+.bullets--arrow {
+  list-style: none;
+  padding-left: 0;
+}
+
+.bullets--arrow li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.bullets--arrow li::before {
+  content: '➢';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #111827;
+}
+
+.bkey {
+  font-weight: 800;
+}
+
+.job {
+  padding: 10px 0 12px;
+  border-bottom: 1px solid #9dc3e6;
+}
+
+.job:last-of-type {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.job__company {
+  margin: 8px 0 0;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.job__meta {
+  margin: 4px 0 0;
+  font-weight: 800;
+}
+
+.job__sep {
+  margin: 0 6px;
+}
+
+.job__projects {
+  margin: 4px 0 0;
+}
+
+.tableWrap {
+  margin-top: 8px;
+  overflow-x: auto;
+}
+
+.eduTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13.5px;
+}
+
+.eduTable th,
+.eduTable td {
+  border: 1px solid #9dc3e6;
+  padding: 7px 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.eduTable th {
+  background: #d9e8f7;
+  font-weight: 800;
+}
+
+@media screen and (max-width: 780px) {
+  .resume {
+    padding: 0;
+  }
+
+  .resume__page {
+    border: 0;
+    box-shadow: none;
+    padding: 16px;
+  }
+
+  .resume__header {
+    flex-direction: column;
+  }
+
+  .contact {
+    width: 100%;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 12mm 13mm 12mm 12mm;
+}
+
+@media print {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .resume {
+    padding: 0;
+    background: #ffffff;
+  }
+
+  .resume__page {
+    box-shadow: none;
+    border: 0;
+    max-width: none;
+    padding: 0;
+  }
+
+  .resume__page.resume__page--a4 {
+    width: auto;
+    min-height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .tableWrap {
+    overflow: visible;
+  }
+}

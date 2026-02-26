@@ -1,15 +1,468 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>porfolio</title>
-    <script type="module" crossorigin src="/assets/index-SguGrCfz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-COcDBgFa.css">
-  </head>
-  <body>
-    <div id="root"><h1>Hello</h1></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Amit Sudama Sharma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume">
+      <div class="resume__page resume__page--a4">
+        <header class="resume__header">
+          <div class="resume__headerLeft">
+            <div class="resume__line">
+              <span class="resume__label">Name:</span>
+              <span class="resume__value">Amit Sudama Sharma</span>
+            </div>
+            <div class="resume__line">
+              <span class="resume__label">LinkedIn:</span>
+              <a
+                class="resume__link"
+                href="https://www.linkedin.com/in/asmamit1612"
+                target="_blank"
+                rel="noreferrer"
+              >
+                https://www.linkedin.com/in/asmamit1612
+              </a>
+            </div>
 
-  </body>
+            <div class="resume__line">
+              <span class="resume__label">Profiles:</span>
+              <div class="social" aria-label="Social profiles">
+                <a
+                  class="social__link social__link--linkedin"
+                  href="https://www.linkedin.com/in/asmamit1612"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  title="LinkedIn"
+                >
+                  <svg
+                    class="social__icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M20.447 20.452H17.21v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.003V9h3.112v1.561h.044c.434-.822 1.494-1.689 3.073-1.689 3.286 0 3.89 2.164 3.89 4.977v6.603zM5.337 7.433a1.81 1.81 0 1 1 0-3.62 1.81 1.81 0 0 1 0 3.62zM6.956 20.452H3.717V9h3.239v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="social__link social__link--leetcode"
+                  href="https://leetcode.com/your-handle/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LeetCode"
+                  title="LeetCode"
+                >
+                  <svg
+                    class="social__icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M16.102 17.898a1.2 1.2 0 0 1-.848-.352l-3.758-3.758a1.2 1.2 0 0 1 0-1.696l3.758-3.758a1.2 1.2 0 1 1 1.696 1.696L13.99 12l2.96 2.96a1.2 1.2 0 0 1-.848 2.05Zm-4.304 0a1.2 1.2 0 0 1-.848-2.05l2.96-2.96-2.96-2.96a1.2 1.2 0 1 1 1.696-1.696l3.758 3.758a1.2 1.2 0 0 1 0 1.696l-3.758 3.758a1.2 1.2 0 0 1-.848.352ZM9.6 20.4h-.002a4.8 4.8 0 0 1-3.394-1.406l-1.2-1.2a4.8 4.8 0 0 1 0-6.788l1.2-1.2A4.8 4.8 0 0 1 9.6 8.4h.002a4.8 4.8 0 0 1 3.394 1.406 1.2 1.2 0 0 1-1.696 1.696A2.4 2.4 0 0 0 9.6 10.8h-.002a2.4 2.4 0 0 0-1.696.704l-1.2 1.2a2.4 2.4 0 0 0 0 3.394l1.2 1.2a2.4 2.4 0 0 0 1.696.704H9.6a2.4 2.4 0 0 0 1.7-.704 1.2 1.2 0 1 1 1.696 1.696A4.8 4.8 0 0 1 9.6 20.4Z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="social__link social__link--github"
+                  href="https://github.com/your-handle"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  title="GitHub"
+                >
+                  <svg
+                    class="social__icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.084-.729.084-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.47-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                    />
+                  </svg>
+                </a>
+                <a
+                  class="social__link social__link--gitlab"
+                  href="https://gitlab.com/your-handle"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitLab"
+                  title="GitLab"
+                >
+                  <svg
+                    class="social__icon"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M22.545 13.247 20.79 7.846a.58.58 0 0 0-1.1-.018l-1.185 3.64H5.495l-1.185-3.64a.58.58 0 0 0-1.1.018L1.455 13.247a.72.72 0 0 0 .264.804l10.28 7.475 10.28-7.475a.72.72 0 0 0 .266-.804Zm-10.546 6.647-6.38-4.64 3.39-10.422h5.98l3.39 10.422-6.38 4.64Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact">
+            <div class="contact__title">CONTACT</div>
+            <div class="contact__row">
+              <span class="contact__k">Mob:</span>
+              <span class="contact__v">+919820061180</span>
+            </div>
+            <div class="contact__row">
+              <span class="contact__k">Email:</span>
+              <a
+                class="contact__v contact__link"
+                href="mailto:asmamit1612@gmail.com"
+              >
+                asmamit1612@gmail.com
+              </a>
+            </div>
+          </div>
+        </header>
+
+        <section class="section" aria-labelledby="summary">
+          <h2 class="bar" id="summary">
+            Summary
+          </h2>
+          <p class="para">
+            Experienced Associate Full Stack Developer with 8+ years of hands-on
+            experience in designing and building scalable, high-performance web
+            applications. Skilled in both frontend and backend development, with
+            strong expertise in ReactJS, Node.js, and Next.js. Proficient in
+            UI/UX design, cloud computing (GCP), and mobile app development
+            using Flutter and Android. Adept at debugging, optimizing
+            performance, and implementing CI/CD pipelines for efficient
+            deployments. Strong collaborator with proven ability to translate
+            business needs into technical solutions.
+          </p>
+        </section>
+
+        <section class="section" aria-labelledby="tech">
+          <h2 class="bar" id="tech">
+            Technical Skills
+          </h2>
+          <ul class="bullets">
+            <li>
+              <span class="bkey">Frontend:</span> ReactJS, Next.js, Redux, Material UI, Ant Design, Tailwind CSS, SCSS, Framer Motion
+            </li>
+            <li>
+              <span class="bkey">Backend:</span> Node.js, Express.js, Firebase, RESTful APIs, Swagger
+            </li>
+            <li>
+              <span class="bkey">Languages:</span> JavaScript, TypeScript, CoffeeScript, Python, Java, SQL
+            </li>
+            <li>
+              <span class="bkey">DevOps & Tools:</span> Git, GitLab CI/CD, Docker, SonarQube, Nginx, JWT, Postman, Jest
+            </li>
+            <li>
+              <span class="bkey">Cloud Platforms:</span> Google Cloud
+              Platform (GCP)
+            </li>
+            <li>
+              <span class="bkey">Databases:</span> PostgreSQL, MySQL,
+              MongoDB
+            </li>
+            <li>
+              <span class="bkey">Mobile Development:</span> React Native, Flutter, Android (Native & Emulator)
+            </li>
+            <li>
+              <span class="bkey">ETL & Scripting:</span> Talend, PowerShell, Python
+            </li>
+            <li>
+              <span class="bkey">AI & Productivity Tools:</span> ChatGPT, Prompt Engineering, Cursor, Windsurf, DeepSeek, Gemini,
+Meta AI, GitHub Copilot, Codeium, Tabnine, Cody (Sourcegraph), Notion AI, Figma AI, Canva AI,
+Zapier, Make
+            </li>
+            <li>
+              <span class="bkey">Web Technologies:</span> HTML5, CSS3, RESTful APIs, Responsive Web Design, Cross-Browser
+Compatibility
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="exp">
+          <h2 class="bar" id="exp">
+            Professional Experience
+          </h2>
+
+          <div class="job">
+            <h3 class="job__company">Niveus Solutions Pvt. Ltd.</h3>
+            <p class="job__meta">
+              <span class="job__role">Cloud Specialist</span>
+              <span class="job__sep">|</span>
+              <span class="job__dates">Nov 2022 — Present</span>
+            </p>
+            <p class="job__projects">
+              <span class="bkey">Key Projects:</span> HDFC ERGO, ICICI IPru, ICICI Money2World, Mahindra (Corporate RFC, Sustenance, S220), Protean eGov,
+Darpan
+            </p>
+            <ul class="bullets">
+              <li>
+                Worked as a Frontend / Full-Stack Developer across enterprise
+                banking and automotive projects.
+              </li>
+              <li>
+                Built and enhanced React-based user interfaces using Material UI
+                and Ant Design with modern UX practices.
+              </li>
+              <li>
+                Developed and documented APIs using Swagger; worked with YAML
+                and PostgreSQL.
+              </li>
+              <li>
+                Prepared BRS and LLD documents and collaborated closely with
+                business stakeholders.
+              </li>
+              <li>
+                Led frontend modules, conducted code reviews, and mentored
+                junior developers.
+              </li>
+              <li>
+                Handled production issues, coordinated KT sessions, and
+                supported production releases.
+              </li>
+              <li>
+                Managed GitLab CI/CD pipelines and ensured code quality using
+                SonarQube.
+              </li>
+              <li>
+                Worked on AI prompt engineering use cases and delivered client
+                presentations.
+              </li>
+              <li>
+                Automated workflows using GCP Scheduler and email notifications.
+              </li>
+            </ul>
+          </div>
+
+          <div class="job">
+            <h3 class="job__company">
+              Tata Consultancy Services Pvt. Ltd.
+            </h3>
+            <p class="job__meta">
+              <span class="job__role">Assistant System Engineer</span>
+              <span class="job__sep">|</span>
+              <span class="job__dates">Nov 2017 — Nov 2022</span>
+            </p>
+            <p class="job__projects">
+              <span class="bkey">Key Projects:</span> SBI Credit Card,ElementFleet (Ordering, Data Platform), WGSN Ascential, GE Internal Systems
+            </p>
+            <ul class="bullets">
+              <li>
+                Worked as a Software Developer on GE enterprise applications
+                across frontend, backend, data, and system support.
+              </li>
+              <li>Developed backend services using Node.js and Express.</li>
+              <li>
+                Built UI components and implemented web scraping using Cheerio.
+              </li>
+              <li>
+                Worked with MySQL, schedulers, and operational monitoring tools.
+              </li>
+              <li>
+                Developed frontend features using ReactJS with Material UI and
+                Tailwind.
+              </li>
+              <li>
+                Supported Java/J2EE applications, participated in requirement
+                analysis and enhancements.
+              </li>
+              <li>
+                Handled data analysis and ETL processes using SQL, Snowflake,
+                and Talend.
+              </li>
+              <li>
+                Automated operational tasks and reporting using Python and
+                PowerShell.
+              </li>
+              <li>
+                Managed Windows Servers, Active Directory, backups, security,
+                and monitoring.
+              </li>
+              <li>
+                Managed source code using Git and followed enterprise security
+                standards.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to resolve issues and
+                meet SLA commitments.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section" aria-labelledby="proficiency">
+          <h2 class="bar" id="proficiency">
+            Computer Proficiency
+          </h2>
+          <ul class="bullets">
+            <li>Self-motivation, initiative with a high level of energy.</li>
+            <li>Highly trustworthy.</li>
+            <li>
+              Resourceful in the completion of projects; effective at
+              multitasking.
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="training">
+          <h2 class="bar" id="training">
+            Technical Training
+          </h2>
+          <ul class="bullets bullets">
+            <li>SOFTWARE ENGINEERING IN NIIT.</li>
+            <li>Ethical Hacking.</li>
+            <li>CCNA and CCNP in Routing and Switching.</li>
+            <li>CCNA and CCNP in Security.</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="cisco">
+          <h2 class="bar" id="cisco">
+            HAND-ON Experience in CISCO PLATFORM
+          </h2>
+          <ul class="bullets bullets">
+            <li>Routers: 1841, 2821, 4300 ISR, 4321 &amp; ISR 4351</li>
+            <li>Switches: 2950, 2960, 3550, 3560, 3750, 3850, 9300</li>
+            <li>Firewalls: ASA 5520, ASA 5516X, 5515, 5525</li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="awards">
+          <h2 class="bar" id="awards">
+            Awards / Achievements / Certification
+          </h2>
+          <ul class="bullets bullets">
+            <li>
+              Certification Google Cloud Associate Cloud Engineer - 05-Mar-2025
+              to 05-Mar-2028.
+            </li>
+            <li>
+              Received 3 Awards certification and 8 appreciation Notes in TCS
+            </li>
+            <li>Received Team Uno certification in Niveus Solutions</li>
+            <li>
+              Certified in The Complete JavaScript Course 2022: From Zero to
+              Expert!
+            </li>
+            <li>
+              Certified in Next Level CSS Creative Hover &amp; Animation Effects
+            </li>
+            <li>
+              Certified in React - The Complete Guide (incl Hooks, React Router,
+              Redux)
+            </li>
+            <li>
+              Certified in Computer Application Form St. Law Computer
+              Institution
+            </li>
+            <li>Certified in TECHNO Utsav in Feb, 2014</li>
+            <li>Certified in GNIIT 2019</li>
+            <li>Certification in Ethical Hacking</li>
+            <li>
+              Certification in Cisco Certified Network Associate (CCNA R&amp;S and
+              Sec)
+            </li>
+            <li>
+              Certification in Cisco Certified Network Professional (CCNP R&amp;S)
+            </li>
+          </ul>
+        </section>
+
+        <section class="section" aria-labelledby="education">
+          <h2 class="bar" id="education">
+            Education
+          </h2>
+          <div class="tableWrap">
+            <table class="eduTable">
+              <thead>
+                <tr>
+                  <th>Degree</th>
+                  <th>Institute</th>
+                  <th>Board / University</th>
+                  <th>Year</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>BSc.IT</td>
+                  <td>Nirmala Memorial Foundation College</td>
+                  <td>Mumbai University</td>
+                  <td>October 2016</td>
+                </tr>
+                <tr>
+                  <td>HSC</td>
+                  <td>Nirmala Memorial Foundation College</td>
+                  <td>Maharashtra Board</td>
+                  <td>February 2012</td>
+                </tr>
+                <tr>
+                  <td>SSC</td>
+                  <td>St Francis High School</td>
+                  <td>Maharashtra Board</td>
+                  <td>March 2010</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        var warningMessage =
+          'Inspection is disabled on this page. Please close Developer Tools.';
+        var alertIntervalId = null;
+
+        function startWarningLoop() {
+          if (alertIntervalId !== null) return;
+
+          alert(warningMessage);
+          alertIntervalId = window.setInterval(function () {
+            alert(warningMessage);
+          }, 1500);
+        }
+
+        document.addEventListener('contextmenu', function (event) {
+          event.preventDefault();
+          startWarningLoop();
+        });
+
+        document.addEventListener('keydown', function (event) {
+          var key = event.key ? event.key.toLowerCase() : '';
+          var ctrlShiftCombo =
+            event.ctrlKey && event.shiftKey && (key === 'i' || key === 'j' || key === 'c' || key === 'k');
+          var blockedKey =
+            key === 'f12' || (event.ctrlKey && key === 'u');
+
+          if (ctrlShiftCombo || blockedKey) {
+            event.preventDefault();
+            startWarningLoop();
+          }
+        });
+
+        window.setInterval(function () {
+          var widthDiff = window.outerWidth - window.innerWidth;
+          var heightDiff = window.outerHeight - window.innerHeight;
+
+          if (widthDiff > 160 || heightDiff > 160) {
+            startWarningLoop();
+          }
+        }, 1000);
+      })();
+    </script>
+</body>
 </html>
